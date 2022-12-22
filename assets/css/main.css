@@ -165,7 +165,7 @@ h2, h3, h4, h5, h6
 .navbar-default .navbar-nav li a 
 {
     padding-top: 2.4rem;
-    padding-bottom: 2.4rem;
+    padding-bottom: 2.4rem ;
     color: #fff;
     font-size: 1.6rem;
 }
@@ -255,6 +255,7 @@ h2, h3, h4, h5, h6
     display: block;
     padding: 10px 20px 10px 0;
     position: relative;
+    font-size: 1.6rem;
 }
 .widget ul li:hover 
 {
@@ -980,8 +981,22 @@ section.starting-text
 }
 article h4 a
 {
-    color: cadetblue;
+    color: #1b3970;
+    text-decoration: underline;
+    line-height: 125%;
 }
+article h4 a:hover
+{
+    color: #ffffff;
+    background-color: #1b3970;
+}
+article h4 a:focus
+{
+    color: #ffffff;
+    background-color: #1b3970;
+    outline: none;
+}
+
 .img-padder 
 {
     background-color: #f8f8f8;

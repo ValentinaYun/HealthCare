@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang = "en">
 
 	<head>
 		<meta charset="UTF-8">
@@ -10,8 +10,6 @@
 		<title>HealthCare</title>
 
 	    <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-	    <!-- <link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
-	    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700' rel='stylesheet' type='text/css'> -->
 	    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
 	    <link href='http://fonts.googleapis.com/css?family=Dosis:300,400,500,600' rel='stylesheet' type='text/css'>
 	    
@@ -19,6 +17,8 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+		<script type="text/javascript" src="assets/js/faq.js"></script>
 	</head>
 
 	<body>
@@ -59,7 +59,7 @@
 			<div class="faq-wrapper">
 				<div class="container">
 					<div class= "row">
-						<h1 class="headline">Frequently Asked Questions</h1>
+						<h1 id ="faqpage" class="headline">Frequently Asked Questions</h1>
 					</div>
 					<div class="row">
 						<div class="sub-headline">
@@ -75,80 +75,101 @@
 				<div class="row">
 					<main class="col-md-9">
 						<div class="faq-header">Things you need to know...</div>
+							<dl class="faq" aria-label="Frequently Asked Questions">
+								<dt>
+									<button  class="faq-q" type="button" aria-expanded="false" aria-controls="faq1_desc">
+										<span class="faq-t" aria-hidden = "true">+</span>Could my cell phone kill me?
+									</button>
+								</dt>
+								<dd>
+									<div class="faq_content" id="faq1_desc" style="display:none;"><p>It seems unlikely. But if you use your mobile phone a lot, consider getting an earpiece or putting your caller on speaker so you can hold the phone away from your head. The biggest study yet, in which Danish researchers tracked 420,000 cell phone users for up to 21 years, found no cancer risk, but much of the data was collected when cell phones were more of a novelty than a primary form of communication. In a smaller recent Israeli study of 1,726 people, heavy cell phone use raised the risk for salivary gland tumors 50 percent on the side on which the subjects usually held the phone (though the risk overall is still vanishingly small). The biggest threat, however, has nothing to do with cancer: Driving while talking on a cell phone puts you in the same league as a drunk driver. You're four to five times more likely to have an accident.</p></div>
+								</dd>
 
-							<div class="faq-c">
-							  <div class="faq-q"><span class="faq-t">+</span>Could my cell phone kill me?</div>
-							  <div class="faq-a">
-							    <p>It seems unlikely. But if you use your mobile phone a lot, consider getting an earpiece or putting your caller on speaker so you can hold the phone away from your head. The biggest study yet, in which Danish researchers tracked 420,000 cell phone users for up to 21 years, found no cancer risk, but much of the data was collected when cell phones were more of a novelty than a primary form of communication. In a smaller recent Israeli study of 1,726 people, heavy cell phone use raised the risk for salivary gland tumors 50 percent on the side on which the subjects usually held the phone (though the risk overall is still vanishingly small). The biggest threat, however, has nothing to do with cancer: Driving while talking on a cell phone puts you in the same league as a drunk driver. You're four to five times more likely to have an accident. </p>
-							  </div>
-							</div>
+								<dt>
+									<button  class="faq-q" type="button" aria-expanded="false" aria-controls="faq2_desc">
+										<span class="faq-t" aria-hidden = "true">+</span>Should I really be taking four times the recommended daily dose?
+									</button>
+								</dt>
+								<dd>
+									<div class="faq_content" id="faq2_desc" style="display:none;"><p>A growing body of evidence strongly suggests that vitamin D in high doses not only helps keep bones strong but also reduces the risk of colon, ovarian, and breast cancers, and diseases such as diabetes and multiple sclerosis. And many of us don't get enough because of a lack of exposure to sunlight (the sun triggers D's production in the skin) or diets that omit good sources (fatty fish such as salmon, mackerel, and tuna, and fortified milk and cereal). While the official daily dose for people age 51 to 70 is 400 IUs, most experts agree that they should aim for 800 to 1,000 IUs of supplemental D a day. But if you're under 50 and you consume the recommended 200 IUs (the equivalent of two glasses of milk daily) and get 10 to 15 minutes of sun exposure—without sunscreen—a day, a 400 IU supplement should do you fine.</p></div>
+								</dd>
 
-							<div class="faq-c">
-							  <div class="faq-q"><span class="faq-t">+</span>Should I really be taking four times the recommended daily dose? </div>
-							  <div class="faq-a">
-							    <p>A growing body of evidence strongly suggests that vitamin D in high doses not only helps keep bones strong but also reduces the risk of colon, ovarian, and breast cancers, and diseases such as diabetes and multiple sclerosis. And many of us don't get enough because of a lack of exposure to sunlight (the sun triggers D's production in the skin) or diets that omit good sources (fatty fish such as salmon, mackerel, and tuna, and fortified milk and cereal). While the official daily dose for people age 51 to 70 is 400 IUs, most experts agree that they should aim for 800 to 1,000 IUs of supplemental D a day. But if you're under 50 and you consume the recommended 200 IUs (the equivalent of two glasses of milk daily) and get 10 to 15 minutes of sun exposure—without sunscreen—a day, a 400 IU supplement should do you fine.</p>
-							  </div>
-							</div>
+								<dt>
+									<button class="faq-q" type="button" aria-expanded="false" aria-controls="faq3_desc">
+									<span class="faq-t">+</span>What happens if Pinocchio says, "my nose will grow now"
+									</button>
+								</dt>
+								<dd>
+									<div class="faq_content" id="faq3_desc" style="display:none;"><p>Certain questions are better left...</p></div>
+								</dd>
 
-							<div class="faq-c">
-							  <div class="faq-q"><span class="faq-t">+</span>What happens if Pinocchio says, "my nose will grow now"</div>
-							  <div class="faq-a">
-							    <p>Certain questions are better left &nbsp; </p>
-							  </div>
-							</div>
-							<div class="faq-c">
-							  <div class="faq-q"><span class="faq-t">+</span>Could my cell phone kill me?</div>
-							  <div class="faq-a">
-							    <p>It seems unlikely. But if you use your mobile phone a lot, consider getting an earpiece or putting your caller on speaker so you can hold the phone away from your head. The biggest study yet, in which Danish researchers tracked 420,000 cell phone users for up to 21 years, found no cancer risk, but much of the data was collected when cell phones were more of a novelty than a primary form of communication. In a smaller recent Israeli study of 1,726 people, heavy cell phone use raised the risk for salivary gland tumors 50 percent on the side on which the subjects usually held the phone (though the risk overall is still vanishingly small). The biggest threat, however, has nothing to do with cancer: Driving while talking on a cell phone puts you in the same league as a drunk driver. You're four to five times more likely to have an accident. </p>
-							  </div>
-							</div>
+								<dt>
+									<button class="faq-q" type="button" aria-expanded="false" aria-controls="faq4_desc">
+										<span class="faq-t" aria-hidden = "true">+</span>Could my cell phone kill me?
+									</button>
+								</dt>
+								<dd>
+									<div class="faq_content" id="faq4_desc" style="display:none;"><p>It seems unlikely. But if you use your mobile phone a lot, consider getting an earpiece or putting your caller on speaker so you can hold the phone away from your head. The biggest study yet, in which Danish researchers tracked 420,000 cell phone users for up to 21 years, found no cancer risk, but much of the data was collected when cell phones were more of a novelty than a primary form of communication. In a smaller recent Israeli study of 1,726 people, heavy cell phone use raised the risk for salivary gland tumors 50 percent on the side on which the subjects usually held the phone (though the risk overall is still vanishingly small). The biggest threat, however, has nothing to do with cancer: Driving while talking on a cell phone puts you in the same league as a drunk driver. You're four to five times more likely to have an accident.</p></div>
+								</dd>
 
-							<div class="faq-c">
-							  <div class="faq-q"><span class="faq-t">+</span>Should I really be taking four times the recommended daily dose? </div>
-							  <div class="faq-a">
-							    <p>A growing body of evidence strongly suggests that vitamin D in high doses not only helps keep bones strong but also reduces the risk of colon, ovarian, and breast cancers, and diseases such as diabetes and multiple sclerosis. And many of us don't get enough because of a lack of exposure to sunlight (the sun triggers D's production in the skin) or diets that omit good sources (fatty fish such as salmon, mackerel, and tuna, and fortified milk and cereal). While the official daily dose for people age 51 to 70 is 400 IUs, most experts agree that they should aim for 800 to 1,000 IUs of supplemental D a day. But if you're under 50 and you consume the recommended 200 IUs (the equivalent of two glasses of milk daily) and get 10 to 15 minutes of sun exposure—without sunscreen—a day, a 400 IU supplement should do you fine.</p>
-							  </div>
-							</div>
+								<dt>
+									<button class="faq-q" type="button" aria-expanded="false" aria-controls="faq5_desc">
+										<span class="faq-t" aria-hidden = "true">+</span>Should I really be taking four times the recommended daily dose?
+									</button>
+								</dt>
+								<dd>
+									<div class="faq_content" id="faq5_desc" style="display:none;"><p>A growing body of evidence strongly suggests that vitamin D in high doses not only helps keep bones strong but also reduces the risk of colon, ovarian, and breast cancers, and diseases such as diabetes and multiple sclerosis. And many of us don't get enough because of a lack of exposure to sunlight (the sun triggers D's production in the skin) or diets that omit good sources (fatty fish such as salmon, mackerel, and tuna, and fortified milk and cereal). While the official daily dose for people age 51 to 70 is 400 IUs, most experts agree that they should aim for 800 to 1,000 IUs of supplemental D a day. But if you're under 50 and you consume the recommended 200 IUs (the equivalent of two glasses of milk daily) and get 10 to 15 minutes of sun exposure—without sunscreen—a day, a 400 IU supplement should do you fine.</p></div>
+								</dd>
 
-							<div class="faq-c">
-							  <div class="faq-q"><span class="faq-t">+</span>What happens if Pinocchio says, "my nose will grow now"</div>
-							  <div class="faq-a">
-							    <p>Certain questions are better left &nbsp; </p>
-							  </div>
-							</div>
-							<div class="faq-c">
-							  <div class="faq-q"><span class="faq-t">+</span>Could my cell phone kill me?</div>
-							  <div class="faq-a">
-							    <p>It seems unlikely. But if you use your mobile phone a lot, consider getting an earpiece or putting your caller on speaker so you can hold the phone away from your head. The biggest study yet, in which Danish researchers tracked 420,000 cell phone users for up to 21 years, found no cancer risk, but much of the data was collected when cell phones were more of a novelty than a primary form of communication. In a smaller recent Israeli study of 1,726 people, heavy cell phone use raised the risk for salivary gland tumors 50 percent on the side on which the subjects usually held the phone (though the risk overall is still vanishingly small). The biggest threat, however, has nothing to do with cancer: Driving while talking on a cell phone puts you in the same league as a drunk driver. You're four to five times more likely to have an accident. </p>
-							  </div>
-							</div>
+								
+								<dt>
+									<button class="faq-q" type="button" aria-expanded="false" aria-controls="faq6_desc">
+									<span class="faq-t">+</span>What happens if Pinocchio says, "my nose will grow now"
+									</button>
+								</dt>
+								<dd>
+									<div class="faq_content" id="faq6_desc" style="display:none;"><p>Certain questions are better left... </p></div>
+								</dd>
 
-							<div class="faq-c">
-							  <div class="faq-q"><span class="faq-t">+</span>Should I really be taking four times the recommended daily dose? </div>
-							  <div class="faq-a">
-							    <p>A growing body of evidence strongly suggests that vitamin D in high doses not only helps keep bones strong but also reduces the risk of colon, ovarian, and breast cancers, and diseases such as diabetes and multiple sclerosis. And many of us don't get enough because of a lack of exposure to sunlight (the sun triggers D's production in the skin) or diets that omit good sources (fatty fish such as salmon, mackerel, and tuna, and fortified milk and cereal). While the official daily dose for people age 51 to 70 is 400 IUs, most experts agree that they should aim for 800 to 1,000 IUs of supplemental D a day. But if you're under 50 and you consume the recommended 200 IUs (the equivalent of two glasses of milk daily) and get 10 to 15 minutes of sun exposure—without sunscreen—a day, a 400 IU supplement should do you fine.</p>
-							  </div>
-							</div>
+								<dt>
+									<button class="faq-q" type="button" aria-expanded="false" aria-controls="faq7_desc">
+										<span class="faq-t" aria-hidden = "true">+</span>Could my cell phone kill me?
+									</button>
+								</dt>
+								<dd>
+									<div class="faq_content" id="faq7_desc" style="display:none;"><p>It seems unlikely. But if you use your mobile phone a lot, consider getting an earpiece or putting your caller on speaker so you can hold the phone away from your head. The biggest study yet, in which Danish researchers tracked 420,000 cell phone users for up to 21 years, found no cancer risk, but much of the data was collected when cell phones were more of a novelty than a primary form of communication. In a smaller recent Israeli study of 1,726 people, heavy cell phone use raised the risk for salivary gland tumors 50 percent on the side on which the subjects usually held the phone (though the risk overall is still vanishingly small). The biggest threat, however, has nothing to do with cancer: Driving while talking on a cell phone puts you in the same league as a drunk driver. You're four to five times more likely to have an accident.</p></div>
+								</dd>
 
-							<div class="faq-c">
-							  <div class="faq-q"><span class="faq-t">+</span>What happens if Pinocchio says, "my nose will grow now"</div>
-							  <div class="faq-a">
-							    <p>Certain questions are better left &nbsp; </p>
-							  </div>
-							</div>
+								<dt>
+									<button class="faq-q" type="button" aria-expanded="false" aria-controls="faq8_desc">
+										<span class="faq-t" aria-hidden = "true">+</span>Should I really be taking four times the recommended daily dose?
+									</button>
+								</dt>
+								<dd>
+									<div class="faq_content" id="faq8_desc" style="display:none;"><p>A growing body of evidence strongly suggests that vitamin D in high doses not only helps keep bones strong but also reduces the risk of colon, ovarian, and breast cancers, and diseases such as diabetes and multiple sclerosis. And many of us don't get enough because of a lack of exposure to sunlight (the sun triggers D's production in the skin) or diets that omit good sources (fatty fish such as salmon, mackerel, and tuna, and fortified milk and cereal). While the official daily dose for people age 51 to 70 is 400 IUs, most experts agree that they should aim for 800 to 1,000 IUs of supplemental D a day. But if you're under 50 and you consume the recommended 200 IUs (the equivalent of two glasses of milk daily) and get 10 to 15 minutes of sun exposure—without sunscreen—a day, a 400 IU supplement should do you fine.</p></div>
+								</dd>
 
+								<dt>
+									<button class="faq-q" type="button" aria-expanded="false" aria-controls="faq9_desc">
+									<span class="faq-t">+</span>What happens if Pinocchio says, "my nose will grow now"
+									</button>
+								</dt>
+								<dd>
+									<div class="faq_content" id="faq9_desc" style="display:none;"><p>Certain questions are better left... </p></div>
+								</dd>
+							</dl>
 
 
 						<div class="row">
 			    			<div class="col-md-6 col-md-offset-3 text-center">
 			    				<ul class="pagination">
-									<li class="disabled"><a href="#">&gt;&gt;</a></li>
-									<li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+									<li class="disabled"><a href="#" aria-label="previous page">&lt;&lt;</a></li>
+									<li class="active"><a href="#">1<span class="sr-only">(current)</span></a></li>
 								  	<li><a href="#">2</a></li>
 								  	<li><a href="#">3</a></li>
 								  	<li><a href="#">4</a></li>
 								  	<li><a href="#">5</a></li>
-								  	<li><a href="#">&gt;&gt;</a></li>
+								  	<li><a href="#"aria-label="next page">&gt;&gt;</a></li>
 								</ul>
 			    			</div>
 			    		</div>
@@ -352,22 +373,7 @@
 		<script>
       		new WOW().init();
 		</script>
-		<script type="text/javascript">
-			$(".faq-q").click( function () {
-			  var container = $(this).parents(".faq-c");
-			  var answer = container.find(".faq-a");
-			  var trigger = container.find(".faq-t");
-			  
-			  answer.slideToggle(200);
-			  
-			  if (trigger.hasClass("faq-o")) {
-			    trigger.removeClass("faq-o");
-			  }
-			  else {
-			    trigger.addClass("faq-o");
-			  }
-			});
-		</script>	
+		
 
 
 	</body>

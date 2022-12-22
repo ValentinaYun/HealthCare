@@ -1,0 +1,196 @@
+img.reload {
+    display: block-inline;
+    position: relative;
+  }
+.carousel-tablist {
+    background-color: #fff;
+}
+.carousel-tablist .carousel-inner {
+    position: relative;
+}
+.carousel-tablist .carousel-item {
+    display: none;
+    max-height: 600px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.carousel-tablist .carousel-item.active {
+    display: block;
+}
+.carousel-tablist .carousel-item .carousel-image img{
+    width: 100%;
+}
+.carousel-tablist .carousel-item .carousel-caption h1{
+  cursor: pointer;
+  color: #fff;
+  text-shadow: none;
+  font-weight: 500;
+  font-size: 4.6rem;
+}
+
+.carousel-tablist .carousel-item .carousel-caption p{
+  padding-top: 3rem;
+  line-height: 1.5;
+  font-weight: 400;
+  text-shadow: none;
+  padding-right: 2rem;
+}
+.carousel-tablist .carousel-item .carousel-caption{
+  position: absolute;
+  left:10%; 
+  width: 40%;
+  color: #fff;
+  background-color: #1b3970e2;
+  text-align: left;
+  border-radius: 1rem;
+  padding-left: 2rem;
+  margin-bottom: 5rem;
+}
+.carousel-tablist .controls {
+  box-sizing: border-box;
+  position: absolute;
+  top: 3rem;
+  left:5%;
+  z-index: 10000;
+  display: flex;
+  width: 100%;
+  padding: 0.25em 1.25em 0;
+}
+.carousel-tablist .tab-wrapper{
+  flex: 1 1 auto;
+  height: 40px;
+  text-align: center;
+}
+.carousel-tablist .rotation{
+  flex: 0 0 auto;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  z-index: 1000;
+}
+.carousel-tablist .svg-play .background {
+  stroke: #1b3970;
+  fill: #1b3970;
+  stroke-width: 1px;
+  opacity: 0.9;
+}
+.carousel-tablist .svg-play .border {
+  fill: transparent;
+  stroke: transparent;
+  stroke-width: 2px;
+}
+.carousel-tablist .svg-play .pause {
+  stroke-width: 4;
+  fill: transparent;
+  stroke: transparent;
+}
+.carousel-tablist .svg-play .play {
+  stroke-width: 1;
+  fill: transparent;
+  stroke: transparent;
+}
+.carousel-tablist .pause .svg-play .pause,
+.carousel-tablist .play .svg-play .play {
+  fill: white;
+  stroke: white;
+}
+.carousel-tablist .rotation:focus .svg-play .background,
+.carousel-tablist .rotation:hover .svg-play .background,
+.carousel-tablist .rotation:hover .svg-play .border {
+  fill: #1b3970;
+  stroke: #1b3970;
+  opacity: 1;
+}
+.carousel-tablist .rotation:focus .svg-play .border {
+  stroke: white;
+}
+.carousel-tablist [role="tablist"] {
+  box-sizing: border-box;
+  border: 0 transparent solid;
+  border-radius: 13px;
+  display: inline-block;
+  padding-top: 2px;
+  height: 38px;
+  width: calc(auto+1rem);
+  background-color: #1b3970;
+}
+.carousel-tablist [role="tablist"].focus {
+  border-width: 1px;
+  border-color: white;
+  padding-top: 0;
+  background-color: #1b3970;
+}
+.carousel-tablist [role="tab"] {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 34px;
+}
+.carousel-tablist [role="tab"] circle.border {
+  display: none;
+  z-index: 12;
+}
+.carousel-tablist [role="tab"] circle.tab {
+  z-index: 16;
+}
+.carousel-tablist [role="tab"] circle.tab-background {
+  stroke: #fff;
+  fill: #fff;
+  stroke-width: 2px;
+  opacity: 0.7;
+  z-index: 14;
+}
+.carousel-tablist [role="tab"] circle.tab,
+.carousel-tablist [role="tab"] circle.border {
+  stroke: #1b3970;
+  fill: transparent;
+  stroke-width: 2px;
+}
+.carousel-tablist-moreaccessible [role="tab"] circle.tab-background {
+  z-index: 16;
+}
+.carousel-tablist-moreaccessible [role="tab"] circle.tab {
+  z-index: 18;
+}
+.carousel-tablist [role="tab"][aria-selected="true"] circle.tab {
+  fill: #fff;
+}
+.carousel-tablist-moreaccessible [role="tab"] circle.border {
+  z-index: 14;
+}
+.carousel-tablist [role="tab"]:focus circle.border {
+  display: block;
+  fill: #1b3970;
+  stroke: #fff;
+}
+.carousel-tablist [role="tablist"].focus circle.tab-background {
+  stroke: #fff;
+  fill: #fff;
+}
+.carousel-tablist [role="tab"]:hover circle.tab-background {
+  fill: white;
+  stroke: white;
+  opacity: 1;
+}
+.carousel-tablist [role="tab"]:hover circle.border,
+.carousel-tablist [role="tab"]:hover circle.tab {
+  fill: #1b3970;
+  stroke: #1b3970;
+  opacity: 1;
+}
+.carousel-tablist [role="tab"][aria-selected="true"]:hover circle.tab {
+  fill: white;
+}
+
+@media(max-width: 991px) {
+    .carousel-tablist .carousel-item .carousel-caption{
+        width:80%;
+        padding-left: 1rem;
+        margin-bottom: 1rem;
+    }
+}

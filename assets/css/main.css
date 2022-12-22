@@ -15,10 +15,9 @@ Text Domain:
  * Table of Contents:
  *
  * 1. - Home
-        1.1 - heading-slider
-        1.2 - starting-text
-        1.3 - reason for choice
-        1.4 - testimonial
+        1.1 - starting-text
+        1.2 - reason for choice
+        1.3 - testimonial
  * 2. - Service
  * 3. - Doctor
         3.1 - doctor-list
@@ -30,19 +29,21 @@ Text Domain:
  * -----------------------------------------------------------------------------
  */
 
- * {outline: none !important;}
 
 
 /*============================================Global============================================ */
+html{
+    font-size: 62,5%;
+}
+*{
+	font-family: "Roboto", Arial, sans-serif;
+}
 ul li
 {
     list-style: none;
     display: inline-block;
 }
-li a
-{
-    text-decoration: none;
-}
+
 .form-control, .input-group-addon
 {
     border-radius: 0px;
@@ -54,7 +55,7 @@ li a
 }
 a 
 {
-    color: darkcyan;
+    color: #1b3970;
 }
 a:hover
 {
@@ -62,7 +63,7 @@ a:hover
 }
 
 .btn {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .pagination
@@ -70,26 +71,35 @@ a:hover
     border-radius: 0px;
 }
 .pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
-    background-color: #46A1B4;
-    border-color: #5FA8AB;
+    background-color: #1b3970;
+    border-color: #1b3970;
 }
-.pagination>li>a, .pagination>li>span {
-
-color: #085A6C;
-background-color: #fff;
-border: 1px solid #ddd;
+.pagination>li>a, .pagination>li>span
+{
+    color: #1b3970;
+    background-color: #fff;
+    border: 1px solid #ddd;
 }
 
 p
 {
-    font-family: 'Dosis', sans-serif;
-    word-spacing: 3px;
-    font-size: 17px;
+    font-size: 1.8rem;
+    line-height: 175%;
+    text-align: left;
 }
-h1, h2, h3, h4, h5, h6
+
+h1
 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: 500;
+    font-family: "Cabin", Arial, sans-serif;
+    color: #fff;
+}
+
+h2, h3, h4, h5, h6
+{
+    font-weight: 500;
+    font-family: "Cabin", Arial, sans-serif;
+    color: #1b3970;
 }
 .send 
 {
@@ -102,32 +112,30 @@ h1, h2, h3, h4, h5, h6
 }
 
 /* ----------------------------------------Header --------------------------------------------*/
-.section-title
+.skiplink a
 {
-    background: url(../img/6177817673_5ba53ffc2a_z.jpg);
-    background-size: cover;
-    vertical-align: middle;
-    background-position: center;
-    color: #F0FEFF;
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
 }
-.section-title .headline
+ .skiplink{
+    background-color: #1b3970;
+ }
+
+.skiplink a:focus
 {
-    font-size: 70px;
-    word-spacing: 10px;
-}
-.section-wrapper
-{
-    background-color: rgba(45, 53, 56, 0.78);
-    padding: 78px 0px;
-    margin-top: 65px;
+    position:static;
+    width:100px;
+    height:40px;
+    z-index: 1000;
+    color:#fff;
+    font-size: 1.4rem;
+    padding: 1px;
 }
 
-
-.section-header{
-  font-size: 2em;
-  border-bottom: 1px dotted #ccc;
-  padding: 1em 0;
-}
 
 /* --------------------------------------  navs  ----------------------------------------------- */
 
@@ -135,66 +143,74 @@ h1, h2, h3, h4, h5, h6
 {
     font-family: 'Dosis', sans-serif;
 }
-.nav.navbar-nav 
-{
-    /* padding: 0px 20px; */
+.icon-bar{
+    color:#fff;
 }
 .navbar-default
 {
-    /*background-color: #267D90;*/
-    background-color: #46a1b4;
+    background-color: #1b3970;
+    margin: auto;
 }
 .navbar-default .navbar-header .logo
 {
-    font-size: 32px;
+    font-size: 2.2rem;
     color: #fff;
 }
-.navbar-nav li 
+
+.navbar-default .navbar-nav li
 {
-    /* border-right: 1px solid #54aec2; */
-    padding: 7px 0px;
+    border-top: 4px solid #1b3970;
 }
+
 .navbar-default .navbar-nav li a 
 {
-    text-shadow: 1px 1px 0px #20606D;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
     color: #fff;
+    font-size: 1.6rem;
 }
 .navbar-default .navbar-nav>.active
 {
-    /*background-color: rgba(5, 207, 252, 0.62);*/
-    background-color: rgba(76, 214, 245, 0.62);
-    border-top: 4px ridge rgb(5, 207, 252);
+    border-top: 4px solid #fff;
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus 
 {
-    color: #fff;
+    outline: none;
+    color: #1b3970;
+    background-color: #fff;
 }
-li:last-child 
-{
-    border-right: transparent;
-}
+
 .navbar-default .navbar-nav>li:hover, .navbar-default .navbar-nav>li:focus {
-    background-color: #377F8F;
-    color: white;
-    border-bottom: 4px ridge rgb(5, 207, 252);
+    border-top: 4px solid #fff;
+    background-color: #fff;
+    color: #1b3970;
 }
-.navbar-fixed-top .navbar-collapse
-{
-    /* max-height: 415px; */
-}
+
 .container-fluid 
 {
     margin-left: 20px;
 }
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus
+.navbar-default .navbar-nav>.active>a
 {
     color: #fff;
     background-color: transparent;
 }
+
+.navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
+    background-color: #fff;
+    color: #1b3970;
+}
+
+
 .navbar-default .navbar-nav>.active:hover 
 {
-    background-color: rgba(5, 207, 252, 0.62);
     border-bottom: none;
+    background-color: #1b3970;
+}
+
+.navbar{
+    border: 0;
+    border-radius: 0;
 }
 
 /* -------------------------------------------Sidebar------------------------------------------- */
@@ -202,7 +218,7 @@ li:last-child
 {
     margin-bottom: 40px;
 }
-.widget h4, 
+.widget h4
 {
     background: url("../img/title-bg.png") repeat-x scroll 0 4px rgba(0, 0, 0, 0);
     font-weight: bold;
@@ -275,50 +291,54 @@ li:last-child
 
 .appointment
 {
-    background-color: #e6e6e6;
+    background-color: #fff;
+    border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    border: 0.5px solid #99a7b0;
 }
 .appointment .header 
 {
-    background-color: #46a1b4;
+    background-color: #1b3970;
     min-height: 99px;
     height: auto !important;
     padding: 10px 23px 0px;
     margin: 0px 0px 30px;
-    border-radius: 3px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.2)), to(rgba(0,0,0,0)));
-    background-image: -webkit-linear-gradient(top, rgba(255,255,255,.2), rgba(0,0,0,0));
-    background-image: -moz-linear-gradient(top, rgba(255,255,255,.2), rgba(0,0,0,0));
-    background-image: -ms-linear-gradient(top, rgba(255,255,255,.2), rgba(0,0,0,0));
-    background-image: -o-linear-gradient(top, rgba(255,255,255,.2), rgba(0,0,0,0));
-    background-image: linear-gradient(top, rgba(255,255,255,.2), rgba(0,0,0,0));
+    border-radius: 1rem 1rem 0 0;
+    -moz-border-radius: 1rem 1rem 0 0;
+    -webkit-border-radius: 1rem 1rem 0 0;
+
 }
+
 .appointment .header h2, .appointment .header .number 
 {
-    text-shadow: 1px 1px 0px #20606D;
     color: #ffffff;
-    font-size: 24px;
+    font-size: 2.4rem;
     line-height: 40px;
     font-weight: normal;
 }  
 .appointment .header a i
 {
-    width: 32px;
-    height: 32px;
-    border-radius: 16px;
-    border: 2px solid #fff;
-    background: #6DBEC2;
     color: white;
     padding-top: 3px;
     padding-left: 6px;
+}
+
+.number{
+    padding: 5px;
+}
+.number:hover{
+    text-decoration-line: underline;
+}
+.number:visible-focus{
+    outline: 2px solid #fff;
 }
 .appointment .header .or 
 {
     display: block;
     width: 100%;
     height: 35px;
-    background: url(../img/or-bg.png) center center no-repeat; 
+    background: url(../img/or-bg.png) center center no-repeat;
     font-size: 14px;
     color: #fff;
     text-align: center;
@@ -326,187 +346,180 @@ li:last-child
     position: relative;
     top: 17px;
 }
-.captcha-container 
-{
-    margin: 0 0 20px;
+.appointment label{
+    font-size: 1.6rem;
+    font-weight: 400;
 }
-.captcha-container img 
-{
-    vertical-align: top;
-    margin: 10px 0px;
-}
+
 .appointment .input-group
 {
-    padding: 10px 0px;
+    padding: 5px 0px;
+    text-align: left;
+}
+.form-control{
+    border: 1px solid #1b3970;
+    border-radius: 0.5rem;
+    border-top-left-radius: 0.5rem !important;
+    border-bottom-left-radius: 0.5rem !important;
+    background-color: #fff;
+}
+
+.send-btn
+{
+    background-color: transparent;
+    margin: 20px 0;
+    color:#1b3970;
+    border-radius: 3rem;
+    font-size: 1.6rem;
+    transition: all 0.3s ease-in;
+    padding: 1rem 1.5rem;
+    border: 2px solid #1b3970;
+    font-weight: 600;
+}
+.send-btn:hover 
+{
+    color: #fff;
+    background-color: #1b3970;
+}
+
+.send-btn:focus{
+    color: #fff;
+    background-color: #1b3970;
+    outline: none;
 }
 
 /* ========================================= 1. Home============================================= */
 
-
-/* -------------------------------------- 1.1 heading-slider---------------------------------------- */
-.slider-inner 
-{
-    /*background-color: rgba(21, 7, 7, 0.55);*/
-    background-color: rgba(51, 71, 90, 0.32);
-    width: 100%;
-    color: white;
-    height: 700px;
-}
-.slider-inner-text
-{
-    margin: 262px 0px;
-    width: 50%
-}
-.slider-1
-{
-    background: url(../img/slider1.jpg);
-    width: 100%;
-    background-size: cover;
-    vertical-align: middle;
-    background-position-x: 75%;
-    background-position-y: 5%;
-}
-.slider-2
-{
-    background: url(../img/slider2.jpg);
-    width: 100%;
-    background-size: cover;
-    background-position-x: 65%;
-    background-position-y: 5%;
-}
-.slider-3
-{
-    background: url(../img/slider3.jpg);
-    width: 100%;
-    background-size: cover;
-    background-position-x: 75%;
-    background-position-y: 5%;
-}
-.slider-inner h1 
-{
-    margin-bottom: 35px;
-    font-size: 70px;
-}
-.slider-inner-text p
-{
-    font-size: 23px;
-}
-/*---------------------------------------------- 1.2 starting-text ----------------------------------*/
+/*---------------------------------------------- 1.1 starting-text ----------------------------------*/
 
 section.starting-text 
 {
-    background-color: rgba(70, 161, 180, 0.82);
-    /*background: -webkit-linear-gradient(left top, #085A6C , #3E8B90);
-    background: -o-linear-gradient(bottom right, #085A6C , #3E8B90);
-    background: -moz-linear-gradient(bottom right, #085A6C , #3E8B90);
-    background: linear-gradient(to bottom right, #085A6C , #3E8B90); */
-    margin-top: -37px;
+    background-color: #1b3970;
+    margin-top: -10px;
 }
 .welcome 
 {
-    padding: 48px 68px;
+    padding: 4.8rem 5.6rem;
     text-align: center;
 }
 .welcome-title 
 {
-    font-size: 50px;
+    font-size: 3.6rem;
     padding-bottom: 15px;
-    /*color: #B0FFF6;*/
     color: #FFFFFF;
-    text-shadow: 1px 1px 2px #083944;
 }
 .welcome-txt 
 {
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #fff;
-    line-height: 35px;
-    margin-bottom: 26px;
-    padding-top: 26px;
-    letter-spacing: 1px;
+    margin-bottom: 2.6rem;
+    padding-top: 2.6rem;
 }
 .welcome-btn
 {
-    background-color: #fff;
+    background-color: transparent;
     margin-top: 20px;
-    color: #46a1b4;
-    border-radius: 0px;
-    font-size: 16px;
+    color:#fff;
+    border-radius: 3rem;
+    font-size: 1.8rem;
     transition: all 0.3s ease-in;
-    padding: 13px 20px;
+    padding: 16px 20px;
     border: 2px solid #fff;
+    font-weight: 500;
 }
 .welcome-btn:hover 
 {
-    color: white;
-    background-color: #46a1b4;
+    color: #1b3970;
+    background-color: #fff;
 }
-/* ----------------------------------- 1.3 reason for choise------------------------------------ */
+
+.welcome-btn:focus{
+    color: #1b3970;
+    background-color: #fff;
+    outline: none;
+}
+
+/* ----------------------------------- 1.2 reason for choise------------------------------------ */
+#services
+{
+    padding-bottom: 3rem;
+}
+
+#services h2{
+    padding-top: 5rem;
+}
 
 .service-heading 
 {
-    padding: 20px 0px;
-    color: darkcyan;
-    font-size: 29px;
+    padding: 2rem 0rem;
+    font-size: 2.8rem;
+    font-weight: 500;
 }
 
-.service-img 
-{
-    opacity: 0.9;
-}
-/* .fa-facebook , .fa-twitter ,.fa-google-plus , .fa-instagram , .fa-pinterest , .fa-skype{
-
-    margin-top: 7px;
-} */
 .form-control {
     height: 38px !important;
 }
+
+.service-img img {
+    border-radius: 1rem 1rem 0 0;
+}
+
 .hservice {
-    /*background: rgb(242, 247, 255);*/
-    background-color: rgba(185, 208, 240, 0.16);
-    border: 1px solid #CED8E7;
+    background-color: #fff;
+    border: 0.5px solid #99a7b0;
+    border-radius: 1rem;
     margin: 30px 0px;
     padding-bottom: 30px;
     transition: all 0.3s ease-in;
 }
-.hservice:hover 
+.hservice:hover
 {
-    box-shadow: 0px 2px 3px 2px #CED8E7;
+    box-shadow: inset 4px 0 #1b3970;
 }
 
-.hservice:hover .service-img 
-{
-    opacity: 1;
+
+.service-description{
+    text-align: left;
+    padding: 0rem 2rem;
 }
-.service-description p 
-{
-    padding: 0px 10px;
-    line-height: 25px;
+.service-description p{
+    line-height: 150%;
+    color: #35414b;
 }
-/* ------------------------------------- 1.4 testimonial-------------------------------------------- */
+/* ------------------------------------- 1.3 testimonial-------------------------------------------- */
 #testimonial
 {
-    background: url(../img/1786577.jpg);
     width: 100%;
     background-size: cover;
     margin-top: 20px;
-    color: rgb(134, 132, 132);
+    background-color: #f3f3f3;
+    padding-bottom: 2rem;
 }
+#testimonial h2{
+    font-size: 3.6rem;
+}
+
+#testimonial .carousel-control{
+    background-image: none;
+    text-shadow: none;
+    color:#1b3970;
+}
+.fa-3x {
+    font-size: 6rem;
+}
+
 .testimonial-wrapper
 {
-    background-color: rgba(0, 0, 0, 0.87);
     padding: 40px 0px;
-}
-.client-content h1 
-{
-    font-size: 51px;
 }
 .sub-headline p 
 {
-    font-size: 23px;
+    font-size: 2.4rem;
+    text-align: center;
 }
 .client-comment 
 {
-    font-size: 18px;
+    font-size: 1.8rem;
     padding: 30px 0px;
     line-height: 30px;
 }
@@ -514,7 +527,7 @@ section.starting-text
 {
     margin-top: 40px;
     margin-bottom: 20px;
-    border: 10px solid rgb(131, 129, 137);
+    border: 1px solid #1b3970;
 }
 /* ========================================= 2. Service=========================================== */
 .service-title
@@ -523,19 +536,17 @@ section.starting-text
     background-size: cover;
     vertical-align: middle;
     background-position: center;
-    color: #F0FEFF;
+    color: #fff;
 }
 .service-title .headline 
 {
-    font-size: 70px;
+    font-size: 6.4rem;
     word-spacing: 10px;
 }
 .service-wrapper
 {
-    /*background-color: rgba(45, 53, 56, 0.28);*/
-    background-color: rgba(70, 161, 180, 0.62);
-    padding: 78px 0px;
-    margin-top: 65px;
+    background-color: #1b3970;
+    padding: 6.4rem 0px;
 }
 .service
 {
@@ -551,30 +562,31 @@ section.starting-text
     width: 150px;
     height: 150px;
     border-radius: 75px;
-    border: 2px solid #6DBEC2;
+    border: 2px solid #1b3970;
     background: #fff;
-    color: #6DBEC2;
+    color: #1b3970;
     padding-top: 38px;
     transition: all 0.7s ease 0s;
 }
 .about-service h3 
 {
     padding: 12px 0px;
-    color: darkcyan;
+    color: #1b3970;
 }
 
 .about-service p 
 {
     padding: 0px 10px;
+    text-align: left;
 }
 .service:hover .service-icon i
 {
     color: white;
-    background-color: #6DBEC2;
+    background-color: #1b3970;
 }
 .service:hover .about-service h3
 {
-    color: #02A2B6;
+    color: #1b3970;
 }
 .special-service
 {
@@ -595,7 +607,7 @@ section.starting-text
 }
 .service-item h3 
 {
-    color: darkcyan;
+    color: #1b3970;
     margin-top: 0px;
 }
 .service-item p 
@@ -605,38 +617,66 @@ section.starting-text
 }
 .special-service h2
 {
-    background: url("../img/title-bg.png") repeat-x scroll 0 13px rgba(0, 0, 0, 0);
     margin-bottom: 10px;
     margin-top: 0;
 }
 
 .sub-headline 
 {
-    padding: 15px 0px 40px 0px;
-    font-size: 24px;
+    padding: 0px 0px 20px 0px;
+    font-size: 2.4rem;
 }
-.headline 
-{
-    padding-top: 45px;
-    font-size: 45px;
-}
+
 .service-rm-btn
 {
     background-color: transparent;
-    color: #46a1b4;
-    border-radius: 0px;
-    font-size: 15px;
+    color: #1b3970;
+    font-size: 16px;
+    font-weight: 700;
     transition: all 0.3s ease-in;
-    padding: 5px 12px;
-    margin: 4px 0px 0px 5px;
-    border-color: #46a1b4;
+    padding: 1rem 1.6rem;
 }
 .service-rm-btn:hover
 {
-    /* background-color: #46a1b4; */
-    background-color: rgb(0, 139, 168);
+    background-color: #1b3970;
     color: #fff;
-    border-color: #3A90CD;
+}
+.rm-btn:focus
+{
+    background-color: #1b3970;
+    color: #fff;
+    outline:none;
+}
+
+.special-service-content .appointment{
+    margin-top: 6rem;
+}
+
+.special-service-content{
+    margin-bottom: 6rem;
+}
+
+.nav-tabs>li>a{
+    font-size: 1.6rem;
+}
+
+.nav-tabs>li>a:hover{
+    background-color: #1b3970;
+    color:#fff;
+}
+
+.nav-tabs>li>a:focus{
+    background-color: #1b3970;
+    color:#fff;
+}
+
+.nav-tabs>li>a:focus-visible{
+    outline: 2px solid #1b3970;
+}
+
+.nav-tabs>li.active>button:hover, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:focus-visible{
+    background-color: #1b3970;
+    color:#fff;
 }
 
 /* ========================================= 3. Doctor============================================ */
@@ -806,20 +846,18 @@ section.starting-text
 }
 .faq-title .headline
 {
-    font-size: 70px;
+    font-size: 6.4rem;
     word-spacing: 10px;
 }
 .faq-wrapper
 {
     background-color: rgba(45, 53, 56, 0.62);
-    padding: 78px 0px;
-    margin-top: 65px;
+    padding: 78px 0px
 }
 
 
 .faq-header{
     font-size: 2em;
-    border-bottom: 1px dotted #ccc;
     padding: 1em 0;
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
@@ -831,19 +869,20 @@ section.starting-text
     margin-top: 80px;
 }
 
-
-.faq-c {
-  border-bottom: 1px dotted #ccc;
-  padding: 1em 0;
+.faq dt{
+    border-top: 1px solid #ccc;
+}
+.faq dt:last-of-type{
+    border-bottom: 1px solid #ccc;
 }
 
 .faq-t {
-  line-height: 1.5em;
-  color: #aaa; 
+  color: #1b3970; 
   font-family: sans-serif; 
   float:left; 
-  font-weight: 700; 
-  padding-right: 0.62em; 
+  font-size: 2rem;
+  font-weight: 500; 
+  padding-right: 2rem; 
   -webkit-transition: all 200ms;
   -moz-transition: all 200ms;
   transition: all 200ms;
@@ -862,35 +901,51 @@ section.starting-text
   margin-top: -5px;
 }
 
-.faq-q {
-    font-family: 'Raleway', sans-serif;
-    cursor: pointer;
-    font-size: 1.25em;
-    background: rgba(249, 249, 249, 0.5);
-    font-weight: 100;
-    padding: 16px;
-    -webkit-transition: all 0.3s ease-in-out;
-       -moz-transition: all 0.3s ease-in-out;
-        -ms-transition: all 0.3s ease-in-out;
-         -o-transition: all 0.3s ease-in-out;
-            transition: all 0.3s ease-in-out;
+.faq-q{
+    display:inline-flex;
+    background-color: transparent;
+    flex-flow: row;
+    text-align: left;
+    width: 100%;
+    padding: 2rem 1rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    border: none;
+    -webkit-transition: all 0.35s ease-in-out;
+       -moz-transition: all 0.35s ease-in-out;
+        -ms-transition: all 0.35s ease-in-out;
+         -o-transition: all 0.35s ease-in-out;
+            transition: all 0.35s ease-in-out;
 }
 
 .faq-q:hover {
-    box-shadow: 0 1px 5px 0 #626262;
-    -webkit-transition: all 0.3s ease-in-out;
-       -moz-transition: all 0.3s ease-in-out;
-        -ms-transition: all 0.3s ease-in-out;
-         -o-transition: all 0.3s ease-in-out;
-            transition: all 0.3s ease-in-out;
+    background-color: #1b3970;
+    color: #fff;
+    -webkit-transition: all 0.35s ease-in-out;
+       -moz-transition: all 0.35s ease-in-out;
+        -ms-transition: all 0.35s ease-in-out;
+         -o-transition: all 0.35s ease-in-out;
+            transition: all 0.35s ease-in-out;
 }
 
-.faq-a {
+.faq-q:focus{
+    background-color: #1b3970;
+    color: #fff;
+    -webkit-transition: all 0.35s ease-in-out;
+       -moz-transition: all 0.35s ease-in-out;
+        -ms-transition: all 0.35s ease-in-out;
+         -o-transition: all 0.35s ease-in-out;
+            transition: all 0.35s ease-in-out;
+}
+
+.faq_content {
   clear: both;
-  color: #666;
-  display: none;
   padding: 1.5em;
 }
+.faq_content p{
+    padding-left: 3rem;
+}
+
 /* ========================================== 5. Blog============================================= */
 .blog-content
 {
@@ -906,14 +961,13 @@ section.starting-text
 }
 .blog-title .headline
 {
-    font-size: 70px;
+    font-size: 6.4rem;
     word-spacing: 10px;
 }
 .blog-wrapper
 {
     background-color: rgba(45, 53, 56, 0.62);
     padding: 78px 0px;
-    margin-top: 65px;
 }
 .archive article 
 {
@@ -966,25 +1020,26 @@ main .info
     padding: 0 15px 0 15px;
 }
 
-main p {
-    line-height: 30px;
-}
 .rm-btn
 {
     background-color: transparent;
     margin-top: 20px;
-    color: #46a1b4;
-    border-radius: 0px;
+    color: #1b3970;
     font-size: 16px;
+    font-weight: 700;
     transition: all 0.3s ease-in;
-    padding: 13px 20px;
-    border-color: #46a1b4;
+    padding: 1rem 1.6rem;
 }
 .rm-btn:hover
 {
-    background-color: #46a1b4;
+    background-color: #1b3970;
     color: #fff;
-    border-color: #3A90CD;
+}
+.rm-btn:focus
+{
+    background-color: #1b3970;
+    color: #fff;
+    outline:none;
 }
 .blog-rm-btn 
 {
@@ -1016,7 +1071,7 @@ main p {
 }
 .gallery-title .headline
 {
-    font-size: 70px;
+    font-size: 6.4rem;
     word-spacing: 10px;
 }
 .gallery-content
@@ -1027,7 +1082,6 @@ main p {
 {
     background-color: rgba(25, 31, 34, 0.24);
     padding: 78px 0px;
-    margin-top: 65px;
 }
 .gallery-btn
 {
@@ -1126,14 +1180,13 @@ main p {
 }
 .contact-title .headline
 {
-    font-size: 70px;
+    font-size: 6.4rem;
     word-spacing: 10px;
 }
 .contact-wrapper
 {
     background-color: rgba(45, 53, 56, 0.71);
     padding: 78px 0px;
-    margin-top: 65px;
 }
 .contact-content
 {
@@ -1180,31 +1233,28 @@ main p {
 
 /* ============================================Footer=========================================== */
 
-#footer
+footer
 {
-    /*background-color: #085A6C;*/
-    background-color: #46A1B4;
-    /*background: -webkit-linear-gradient(left top, #085A6C , #3E8B90);
-    background: -o-linear-gradient(bottom right, #085A6C , #3E8B90);
-    background: -moz-linear-gradient(bottom right, #085A6C , #3E8B90);
-    background: linear-gradient(to bottom right, #085A6C , #3E8B90); */
+    background-color: #1b3970;
     padding: 25px 0px;
 }
 .copy-right-text
 {
     color: #fff;
-    font-size: 13px;
+    font-size: 1.6rem;
     padding-top: 25px;
 }
 
 .copy-right-text a {
-    color: #AFEEEE;
-    font-size: 15px;
+    color: #fff;
+    font-size: 1.6rem;
     font-weight: 500;
+    text-decoration-line: underline;
 }
 
 .copy-right-text a:hover {
-    color: #064B6D;
+    background-color: #fff;
+    color:#1b3970
 }
 
 
@@ -1225,10 +1275,9 @@ li.socials-icons
     height: 40px;
     border-radius: 50%;
     border: 2px solid #fff;
-    /* background: #6DBEC2; */
-    background-color: #49C1DC;
+    background-color: #ffffff;
     float: left;
-    color: white;
+    color: #1b3970;
     padding-top: 3px;
     font-size: 20px;
 }
@@ -1279,9 +1328,11 @@ li.socials-icons
         /* padding: 10px 0px; */
         overflow: visible!important;
     }
-}
-    
-@media (min-width: 1200px){
+    .welcome 
+    {
+        padding: 4.8rem 12rem;
+        text-align: center;
+    }
     .navbar-collapse 
     {
         width: auto;
@@ -1294,6 +1345,13 @@ li.socials-icons
 @media (max-width: 991px){
     .slider-inner-text {
         margin: 162px 0px;
+    }
+}
+
+@media (min-width: 768px){
+    .logo
+    {
+        margin-top: 1rem;
     }
 }
 

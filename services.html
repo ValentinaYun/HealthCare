@@ -1,67 +1,65 @@
 <!DOCTYPE html>
 
-<html>
+<html lang = "en">
 
 	<head>
 		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" href="img/season-change.jpg" type="image/x-icon">
-		<title>HealthCare</title>
+		<link rel="shortcut icon" href="assets/img/season-change.jpg" type="image/x-icon">
+		<title>HealthCare clinic</title>
 
-
-	    <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-	    <!-- <link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
-	    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700' rel='stylesheet' type='text/css'> -->
-	    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
-	    <link href='http://fonts.googleapis.com/css?family=Dosis:300,400,500,600' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Arial' rel='stylesheet' type='text/css'>
+	    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Cabin:300,400,500,600,700' rel='stylesheet' type='text/css'>
 	    
 		<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+		<script type="text/javascript" src="assets/js/tab.js"></script>
 	</head>
 
 	<body>
-		<section class= "navs">
-			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class = "skiplink"><a href="#maincontent">Skip navigation</a></div>
+		<header>
+			<nav class="navbar navbar-default" role="navigation">
   				<div class="container-fluid">
     				<!-- Brand and toggle get grouped for better mobile display -->
     				<div class="navbar-header">
       					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					        <span class="sr-only">Toggle navigation</span>
+							<span class="sr-only">Toggle navigation</span>
 					        <span class="icon-bar"></span>
 					        <span class="icon-bar"></span>
 					        <span class="icon-bar"></span>
-	      				</button>
-	      				<a class="navbar-brand logo" href="#">
-	      					<span><i class="fa fa-stethoscope"></i></span>
-	      					HealthCare
-	      				</a>
+						</button>
+	      				<span class="navbar-brand logo" href="index.html" alt = "logotype HealthCare clinic">
+							<span><i class="fa fa-stethoscope"></i></span>HealthCare
+						</span>
 	    			</div>
-
-    		<!-- Collect the nav links, forms, and other content for toggling -->
+		
+		    		<!-- Collect the nav links, forms, and other content for toggling -->
 				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				    	<ul class="nav navbar-nav navbar-right">
 					        <li><a href="index.html">Home</a></li>
-					        <li class="active"><a href="#">Services</a></li>
+					        <li class="active"><a href="services.html">Services</a></li>
 					        <li><a href="doctors.html">Doctors</a></li>
 					        <li><a href="blog.html">Blog</a></li>
 							<li><a href="faq.html">FAQs</a></li>
 							<li><a href="gallery.html">Gallery</a></li>
 							<li><a href="contact.html">Contact Us</a></li>
 				      	</ul>
-				    </div><!-- /.navbar-collapse -->
-				</div><!-- /.container-fluid -->
+				    </div><!-- navbar-collapse -->
+				</div><!-- container-fluid -->
 			</nav>
-		</section>
+		</header>
 
-
+		<main id = "maincontent">
 		<section class="service-title text-center">
 			<div class="service-wrapper">
 				<div class="container">
 					<div class= "row">
-						<h2 class="headline">Featured Services</h2>
+						<h1 class="headline">Services</h1>
 					</div>
 					<div class="row">
 						<div class="sub-headline">
@@ -74,11 +72,22 @@
 
 		<section class= "featured-service-content">
 			<div class="container">
+				<div class= "row">
+					<div class= "col-lg-12 col-sm-12 col-xs-12">
+						<h2 class= "headline text-center">
+							Featured services
+						</h2>
+						<p class="sub-headline text-center">
+							Lorem ipsum dolor sit amet, consectetur
+						</p>
+					</div>
+				</div>
+
 				<div class="row">
 					<div class="col-sm-4 service">
 						<div class="row text-center">
 							<div class="service-icon text-center">
-		        				<i class="fa fa-eye fa-5x"></i>
+		        				<i class="fa fa-eye fa-5x" aria-hidden="true"></i>
 		        			</div>
 						</div>
 		        			
@@ -98,7 +107,7 @@
 	        		<div class="col-sm-4 service">
 	        			<div class="row text-center">
 	        				<div class="service-icon text-center">
-		        				<i class="fa fa-stethoscope fa-5x"></i>
+		        				<i class="fa fa-stethoscope fa-5x" aria-hidden="true"></i>
 		        			</div>
 	        			</div>
 		        			
@@ -118,7 +127,7 @@
 	        		<div class="col-sm-4 service">
 	        			<div class="row text-center">
 	        				<div class="service-icon text-center">
-		        				<i class="fa fa-medkit fa-5x"></i>
+		        				<i class="fa fa-medkit fa-5x" aria-hidden="true"></i>
 		        			</div>
 	        			</div>
 		        			
@@ -138,7 +147,7 @@
 	        		<div class="col-sm-4 service">
 	        			<div class="row text-center">
 	        				<div class="service-icon text-center">
-		        				<i class="fa fa-ambulance fa-5x"></i>
+		        				<i class="fa fa-ambulance fa-5x" aria-hidden="true"></i>
 		        			</div>
 	        			</div>
 		        			
@@ -157,7 +166,7 @@
 	        		<div class="col-sm-4 service">
 	        			<div class="row text-center">
 	        				<div class="service-icon text-center">
-		        				<i class="fa fa-tint fa-5x"></i>
+		        				<i class="fa fa-tint fa-5x" aria-hidden="true"></i>
 		        			</div>
 	        			</div>
 		        			
@@ -176,7 +185,7 @@
 	        		<div class="col-sm-4 service">
 	        			<div class="row text-center">
 	        				<div class="service-icon text-center">
-		        				<i class="fa fa-clock-o fa-5x"></i>
+		        				<i class="fa fa-clock-o fa-5x" aria-hidden="true"></i>
 		        			</div>
 	        			</div>
 	        			<div class="row text-center">
@@ -201,21 +210,21 @@
 						<div class="special-service">
 							<h2><span>Special Services</span></h2>
 							<div class="service-tab">
-								<ul class="nav nav-tabs" role="tablist">
+								<ul class="nav nav-tabs" role="tablist" aria-label="special services">
 	  								<li class="active">
-	  									<a href="#all" role="tab" data-toggle="tab">All</a>
+	  									<a href="#all" role="tab" data-toggle="tab" aria-selected="true">All</a>
 	  								</li>
 									<li>
-										<a href="#dental" role="tab" data-toggle="tab">Dental Service</a>
+										<a href="#dental" role="tab" data-toggle="tab" aria-selected="false">Dental Service</a>
 									</li>
 									<li>
-										<a href="#diagnostic" role="tab" data-toggle="tab">Diagnostic Serivce</a>
+										<a href="#diagnostic" role="tab" data-toggle="tab" aria-selected="false">Diagnostic Serivce</a>
 									</li>
 									<li>
-										<a href="#rehabilitation" role="tab" data-toggle="tab">Rehabilitation Serivce</a>
+										<a href="#rehabilitation" role="tab" data-toggle="tab" aria-selected="false">Rehabilitation Serivce</a>
 									</li>
 									<li>
-										<a href="#donor" role="tab" data-toggle="tab">Donation Serivce</a>
+										<a href="#donor" role="tab" data-toggle="tab" aria-selected="false">Donation Serivce</a>
 									</li>		
 								</ul>
 
@@ -418,43 +427,43 @@
 					</div>
 					<div class="col-md-4">
 						<div class= "appointment">
-							
-		                    <div class="header text-center">
-		                        <h2>Make an Appointment</h2>
-		                       	<a href="#" class="number">
-		                       		<i class="fa fa-phone fa-fw"></i>
+						
+							<div class="header text-center">
+								<h2>Make an Appointment</h2>
+								<a href="tel:+18001234567" class="number" aria-label="Call for make an appointment">
+									<i class="fa fa-phone fa-fw"></i>
 									1-800-123-4567
-		                       	</a>
-		                        <span class="or">OR</span>
-		                    </div>
+								</a>
+								<span class="or">OR</span>
+							</div>
 
 							<!-- form of appointment -->
 							<div class="row">
 								<form method="post" action="#">
 									<div class= "form">
 										<div class="input-group margin-bottom-sm col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
-										 	<input class="form-control" type="text" placeholder="Full Name *" required>
+											<label for="fullname">Full Name* </label>
+											<input class="form-control" type="text" name="fullname" id="fullname" required aria-required="true" autocomplete="name" aria-label="Input your full name">
 										</div>
 										<div class="input-group margin-bottom-sm col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
-										 	<input class="form-control" type="text" placeholder="Email Address *" required>
+											<label for="email">Email Address* </label>
+											<input class="form-control" type="email" name="email" id="email" required aria-required="true" autocomplete="email" aria-label="Input your email">
 										</div>
 										<div class="input-group margin-bottom-sm col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
-										 	<input class="form-control" type="text" placeholder="Appointment Date *" required>
+											<label for="date">Date* </label>
+											<input class="form-control" type="date" name="date" id="date" required aria-required="true" aria-label="Choose date of appointment">
 										</div>
 										<div class="input-group margin-bottom-sm col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
-										 	<input class="form-control" type="text" placeholder="Mobile Number *" required>
+											<label for="tel">Mobile Number* </label>
+											<input class="form-control" type="tel" name="tel" id="tel" required aria-required="true" pattern="[0-9]{1,10}" autocomplete="tel-national" aria-label="Input your number">
 										</div>
 									</div>
 									<div class="input-group margin-bottom-sm col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
-										<textarea class="form-control" rows="6" placeholder="Your Problem *" required></textarea>
+										<label for="problem">Your Problem* </label>
+										<textarea class="form-control" name="problem" id="problem" rows="6" required aria-required="true" style=" resize:none;" aria-label="Input your problem"></textarea>
 									</div>
 									<div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
-										<div class="captcha-container">
-		                                    <label>Are you human? </label><br/>
-		                                    <img src="http://inspirythemesdemo.com/healthpress/wp-content/themes/healthpress-theme/captcha/captcha.php" alt="">
-		                                    <input type="text" class="captcha required" name="captcha" maxlength="5" title=" Please enter the code characters displayed in image!">
-		                                </div>
-										<input class="btn btn-primary send" type="submit" value="Send">
+										<button class="send-btn">Send appointment</button>
 									</div>
 								</form>
 							</div>
@@ -465,8 +474,8 @@
 			</div>
 		</section>
 
-
-		<section id="footer">
+		</main>
+		<footer>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3">
@@ -500,7 +509,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</footer>
 		<script type="text/javascript" src="assets/js/jquery.min.js"></script>
 		<script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
 		<script type="text/javascript" src="assets/js/wow.min.js"></script>
@@ -517,7 +526,9 @@
 				e.preventDefault()
 				$(this).tab('show')
 			})
+
+			
 		</script>
-		
+
 	</body>
 </html>
